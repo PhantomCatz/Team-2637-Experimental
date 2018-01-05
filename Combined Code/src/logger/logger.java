@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class logger {
 	
+	public static logger instance;
+	
 	// change to match computer being used
 	static File logFile = new File("C:\\Users\\saral\\Desktop\\Logs\\log1.txt");
 	
@@ -26,8 +28,15 @@ public class logger {
 	private PrintWriter writer;
 	
 	
+	
 	///////////////////////////////////////////////////////////////////////////
 	
+	public static logger getInstance() {
+        if (instance == null) {
+             instance = new logger();
+        }
+        return instance;
+    }
 	
 	public void setLogLevel(int i) {
 		logLevel = i;
