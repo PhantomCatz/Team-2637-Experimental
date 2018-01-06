@@ -6,11 +6,11 @@ public class CatzJoystick
 {
 	logger log = new logger();
 	final int TRIGGER = 1;
-	final int THUMB_BUTTON = 2;
-	final int BUTTON_THREE = 3;
-	final int BUTTON_FOUR = 4;
-	final int BUTTON_FIVE = 5;
-	final int BUTTON_SIX = 6;
+	final int SIDE_THUMB = 2;
+	final int THUMB_BOTTOM_LEFT = 3;
+	final int THUMB_BOTTOM_RIGHT = 4;
+	final int THUMB_TOP_LEFT = 5;
+	final int THUMB_TOP_RIGHT = 6;
 	final int BUTTON_SEVEN = 7;
 	final int BUTTON_EIGHT = 8;
 	final int BUTTON_NINE = 9;
@@ -26,32 +26,30 @@ public class CatzJoystick
 	public CatzJoystick(int port)
 	{
 		joy = new Joystick(port);
-		log.setLogLevel(3);
 	}
 	public boolean GetTrigger()
 	{
 		return joy.getRawButton(TRIGGER);
 	}
-	public boolean GetThumbButton()
+	public boolean GetSideThumb()
 	{
-		log.add("thumb button", 3, 1.1);
-		return joy.getRawButton(THUMB_BUTTON);
+		return joy.getRawButton(SIDE_THUMB);
 	}
-	public boolean GetButtonThree()
+	public boolean GetThumbBottomLeft()
 	{
-		return joy.getRawButton(BUTTON_THREE);
+		return joy.getRawButton(THUMB_BOTTOM_LEFT);
 	}
-	public boolean GetButtonFour()
+	public boolean GetThumbBottomRight()
 	{
-		return joy.getRawButton(BUTTON_FOUR);
+		return joy.getRawButton(THUMB_BOTTOM_RIGHT);
 	}
-	public boolean GetButtonFive()
+	public boolean GetThumbTopLeft()
 	{
-		return joy.getRawButton(BUTTON_FIVE);
+		return joy.getRawButton(THUMB_TOP_LEFT);
 	}
-	public boolean GetButtonSix()
+	public boolean GetThumbTopRight()
 	{
-		return joy.getRawButton(BUTTON_SIX);
+		return joy.getRawButton(THUMB_TOP_RIGHT);
 	}
 	public boolean GetButtonSeven()
 	{

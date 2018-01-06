@@ -51,7 +51,7 @@ public class CatzXboxController
 	}
 	public double GetLeftStickY()
 	{
-		return xbox.getRawAxis(LEFT_STICK_Y);
+		return -(xbox.getRawAxis(LEFT_STICK_Y));
 	}
 	public double GetRightStickX()
 	{
@@ -59,7 +59,7 @@ public class CatzXboxController
 	}
 	public double GetRightStickY()
 	{
-		return xbox.getRawAxis(RIGHT_STICK_Y);
+		return -(xbox.getRawAxis(RIGHT_STICK_Y));
 	}
 	public double GetRightTrigger()
 	{

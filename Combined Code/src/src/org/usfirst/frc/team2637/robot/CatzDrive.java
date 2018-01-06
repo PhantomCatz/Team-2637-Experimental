@@ -7,8 +7,12 @@ public class CatzDrive
 	{
 		Drive = new RobotDrive(frontRightID, frontLeftID, backRightID, backLeftID);
 	}
-	public void ArcadeDrive(double axis_y, double axis_x)
+	public void setModeArcadeDriveRacing(CatzXboxController control)
 	{
-		Drive.arcadeDrive(axis_y, axis_x);
+		Drive.arcadeDrive(control.GetRightTrigger()-control.GetLeftTrigger(), control.GetRightStickX());
+	}
+	public void setModeArcadeDriveFlash(CatzXboxController control)
+	{
+		Drive.arcadeDrive(control.GetLeftStickY(), control.GetRightStickX());
 	}
 }
