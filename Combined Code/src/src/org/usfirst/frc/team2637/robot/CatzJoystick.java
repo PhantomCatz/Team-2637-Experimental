@@ -27,67 +27,67 @@ public class CatzJoystick
 	{
 		joy = new Joystick(port);
 	}
-	public boolean GetTrigger()
+	public boolean getTrigger()
 	{
 		return joy.getRawButton(TRIGGER);
 	}
-	public boolean GetSideThumb()
+	public boolean getSideThumb()
 	{
 		return joy.getRawButton(SIDE_THUMB);
 	}
-	public boolean GetThumbBottomLeft()
+	public boolean getThumbBottomLeft()
 	{
 		return joy.getRawButton(THUMB_BOTTOM_LEFT);
 	}
-	public boolean GetThumbBottomRight()
+	public boolean getThumbBottomRight()
 	{
 		return joy.getRawButton(THUMB_BOTTOM_RIGHT);
 	}
-	public boolean GetThumbTopLeft()
+	public boolean getThumbTopLeft()
 	{
 		return joy.getRawButton(THUMB_TOP_LEFT);
 	}
-	public boolean GetThumbTopRight()
+	public boolean getThumbTopRight()
 	{
 		return joy.getRawButton(THUMB_TOP_RIGHT);
 	}
-	public boolean GetButtonSeven()
+	public boolean getButtonSeven()
 	{
 		return joy.getRawButton(BUTTON_SEVEN);
 	}
-	public boolean GetButtonEight()
+	public boolean getButtonEight()
 	{
 		return joy.getRawButton(BUTTON_EIGHT);
 	}
-	public boolean GetButtonNine()
+	public boolean getButtonNine()
 	{
 		return joy.getRawButton(BUTTON_NINE);
 	}
-	public boolean GetButtonTen()
+	public boolean getButtonTen()
 	{
 		return joy.getRawButton(BUTTON_TEN);
 	}
-	public boolean GetButtonEleven()
+	public boolean getButtonEleven()
 	{
 		return joy.getRawButton(BUTTON_ELEVEN);
 	}
-	public boolean GetButtonTwelve()
+	public boolean getButtonTwelve()
 	{
 		return joy.getRawButton(BUTTON_TWELVE);
 	}
-	public double GetXAxis()
+	public double getXAxis()
 	{
 		return joy.getRawAxis(STICK_X_AXIS);
 	}
-	public double GetYAxis()
+	public double getYAxis()
 	{
 		return joy.getRawAxis(STICK_Y_AXIS);
 	}
-	public double GetZAxis()
+	public double getZAxis()
 	{
 		return joy.getRawAxis(STICK_Z_AXIS);
 	}
-	public double GetSlider()
+	public double getSlider()
 	{
 		return joy.getRawAxis(SLIDER);
 	}

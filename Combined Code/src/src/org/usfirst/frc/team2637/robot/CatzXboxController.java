@@ -21,51 +21,51 @@ public class CatzXboxController
 		xbox = new XboxController(port);
 		log.setLogLevel(3);
 	}
-	public boolean GetAButton()
+	public boolean getAButton()
 	{
 		return xbox.getRawButton(A_BUTTON);
 	}
-	public boolean GetBButton()
+	public boolean getBButton()
 	{
 		return xbox.getRawButton(B_BUTTON);
 	}
-	public boolean GetXButton()
+	public boolean getXButton()
 	{
 		return xbox.getRawButton(X_BUTTON);
 	}
-	public boolean GetYButton()
+	public boolean getYButton()
 	{
 		return xbox.getRawButton(Y_BUTTON);
 	}
-	public boolean GetLeftBumper()
+	public boolean getLeftBumper()
 	{
 		return xbox.getRawButton(LEFT_BUMPER);
 	}
-	public boolean GetRightBumper()
+	public boolean getRightBumper()
 	{
 		return xbox.getRawButton(RIGHT_BUMPER);
 	}
-	public double GetLeftStickX()
+	public double getLeftStickX()
 	{
 		return xbox.getRawAxis(LEFT_STICK_X);
 	}
-	public double GetLeftStickY()
+	public double getLeftStickY()
 	{
 		return -(xbox.getRawAxis(LEFT_STICK_Y));
 	}
-	public double GetRightStickX()
+	public double getRightStickX()
 	{
 		return xbox.getRawAxis(RIGHT_STICK_X);
 	}
-	public double GetRightStickY()
+	public double getRightStickY()
 	{
 		return -(xbox.getRawAxis(RIGHT_STICK_Y));
 	}
-	public double GetRightTrigger()
+	public double getRightTrigger()
 	{
 		return xbox.getRawAxis(RIGHT_TRIGGER);
 	}
-	public double GetLeftTrigger()
+	public double getLeftTrigger()
 	{
 		return xbox.getRawAxis(LEFT_TRIGGER);
 	}
