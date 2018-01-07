@@ -2,6 +2,7 @@ package org.usfirst.frc.team2637.robot;
 import edu.wpi.first.wpilibj.XboxController;
 public class Xbox
 {
+//I like mac and cheese
 	int port;
 	final int A_BUTTON = 1;
 	final int B_BUTTON = 2;
