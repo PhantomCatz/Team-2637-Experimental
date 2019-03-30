@@ -50,4 +50,9 @@ public class CatzDrive
         drive.arcadeDrive(xSpeed, zRotation);
     }
 
+    public void tankDrive(double leftSpeed, double rightSpeed)
+    {
+        drive.tankDrive(leftSpeed, rightSpeed);
+    }
+
 }

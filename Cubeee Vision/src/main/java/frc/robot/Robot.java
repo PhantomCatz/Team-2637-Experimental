@@ -105,7 +105,48 @@ public class Robot extends TimedRobot {
   @Override
   public void autonomousPeriodic() {
 
+   double motorPower = 0.5;
+   double rotation = 0.0;
 
+    if(heading > 2)
+    {
+      rotation = 0.3;
+    }
+    else if(heading < -2)
+    {
+      rotation = -0.3;
+    }
+
+    driveTrain.arcadeDrive(motorPower, rotation);
+
+
+    if(!SensorObjContainer.get("vis").isValid())
+    {
+      motorPower = 0;
+    }
+
+    if(distance < 10)
+    {
+      motorPower = 0;
+        if(heading < 0)
+        {
+          driveTrain.tankDrive(0, 0);
+        }
+        if(heading <= 0 )
+        {
+          driveTrain.tankDrive(0, 0);
+        }
+    }
+
+    else
+    {
+      if(distance < 0.25)
+      {
+        motorPower = 0.25;
+      }
+    }
+
+    /*
 
     int maxHead = 10;
 
@@ -140,8 +181,7 @@ public class Robot extends TimedRobot {
         motorPower = 0.4;
       }
     }
-
-    driveTrain.arcadeDrive(motorPower, rotation);
+    */
 
   }
 
