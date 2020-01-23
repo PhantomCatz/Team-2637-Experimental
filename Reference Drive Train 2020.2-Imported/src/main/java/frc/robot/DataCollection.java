@@ -195,7 +195,7 @@ public class DataCollection
             }
 
             {
-            if(robotDataType == 1) 
+            if(robotDataType == 3) 
             {
                 sb.append("Time");
                 sb.append(", ");
@@ -239,20 +239,20 @@ public class DataCollection
         //sb.append("\n*********************************************************\n");
 
         // length of a singular data set
-        int dataSetLength = 4;
+        int dataSetLength = 12;
         
         // loop through arraylist and adds it to the StringBuilder
         for (int i = 0; i < data.size(); i++)
         {
             //sb.append(data.get(i) + "\t\t");
-            
+          /*  
             if (((i + 1) % dataSetLength) == 0)
             {
-                sb.append(data.get(i) + "\n");
-            }
-            else
+                sb.append(data.get(i) + ",");
+            } 
+            else */
             {
-                sb.append(data.get(i) + ", ");
+                sb.append(data.get(i) + "\n");
             }
         }
     }
@@ -261,7 +261,7 @@ public class DataCollection
     public void exportData() throws IOException
     {       
         try (
-        FileWriter fw = new FileWriter("//media//sda1//RobotData" + sdf.getCalendar() + ".csv", true);
+        FileWriter fw = new FileWriter("//media//sda1//RobotData.csv", true);
         //FileWriter fw = new FileWriter("ftp:////roboRIO-2637-FRC.local//ESD-USB//RobotData.txt", true);
         //FileWriter fw = new FileWriter("C:\\Users\\justi\\Documents\\FRC.txt", true);
         //FileWriter fw = new FileWriter("/media/sda1/RobotData.txt", true);

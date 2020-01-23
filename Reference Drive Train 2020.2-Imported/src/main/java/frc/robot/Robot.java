@@ -118,7 +118,7 @@ public class Robot extends TimedRobot {
   public void teleopInit() 
   {
     t.start();
-    dataCollection.setDataType(1);
+    dataCollection.setDataType(2);
 
     dataCollection.startDataCollection();
 
